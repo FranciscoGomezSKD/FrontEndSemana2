@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pastelería Only-Cakes</title>
+</head>
+<body>
+    <img src="./ONLY-CAKES.PNG" alt="Only-cakes" width="200px" height="200px">
+    <h1 align="center"> Pastelerías Only-Cakes: ¡Dulce Felicidad! </h1>
+    <h2 align="center"> Bienvenidos </h2>
+    <br>
+    <br>
+    <h2 align="center"> MENÚ </h2>
+    <br>
+    <br>
+
+    <dl>
+        <dt>Sabores</dt>
+        <dd>Sabor 1 ...................................... $30.00</dd>
+        <dd>Sabor 2 ...................................... $40.00</dd>
+        <dd>Sabor 3 ...................................... $50.00</dd>
+        <dd>Sabor 4 ...................................... $60.00</dd>
+        <dd>Sabor 5 ...................................... $70.00</dd>
+        <dd>Sabor 6 ...................................... $80.00</dd>
+        <br>
+        <dt>Decoración</dt>
+        <dd>Adorno 1 ...................................... $10.00</dd>
+        <dd>Adorno 2 ...................................... $20.00</dd>
+        <dd>Adorno 3 ...................................... $30.00</dd>
+        <dd>Adorno 4 ...................................... $40.00</dd>
+        <dd>Adorno 5 ...................................... $50.00</dd>
+        <dd>Adorno 6 ...................................... $60.00</dd>
+        <br>
+    </dl>
+    <br>
+    <h2 align="center"> PEDIDO </h2>
+    <br>
+    <p>Seleccione los sabores y adornos de su preferencia:</p>
+    <p>Sabores</p>
+    <input type="checkbox" id="topping1" name="topping1" value="Sabor1">
+    <label for="topping1">Sabor1</label><br>
+    <input type="checkbox" id="topping2" name="topping2" value="Sabor2">
+    <label for="topping2">Sabor2</label><br>
+    <input type="checkbox" id="topping3" name="topping3" value="Sabor3">
+    <label for="topping3">Sabor3</label><br>
+    <input type="checkbox" id="topping4" name="topping4" value="Sabor4">
+    <label for="topping4">Sabor4</label><br>
+    <input type="checkbox" id="topping5" name="topping5" value="Sabor5">
+    <label for="topping5">Sabor5</label><br>
+    <input type="checkbox" id="topping6" name="topping6" value="Sabor6">
+    <label for="topping6">Sabor6</label><br>
+    <br>
+    <p>Decoración</p>
+    <input type="checkbox" id="topping7" name="topping7" value="Adorno1">
+    <label for="topping7">Adorno1</label><br>
+    <input type="checkbox" id="topping8" name="topping8" value="Adorno2">
+    <label for="topping8">Adorno2</label><br>
+    <input type="checkbox" id="topping9" name="topping9" value="Adorno3">
+    <label for="topping9">Adorno3</label><br>
+    <input type="checkbox" id="topping10" name="topping10" value="Adorno4">
+    <label for="topping10">Adorno4</label><br>
+    <input type="checkbox" id="topping11" name="topping11" value="Adorno5">
+    <label for="topping11">Adorno5</label><br>
+    <input type="checkbox" id="topping12" name="topping12" value="Adorno6">
+    <label for="topping12">Adorno6</label><br>
+
+    <br>
+    <br>
+
+    <p>Datos del cliente</p>
+    <form action="/accion.js" id="form1" method="post">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre"><br><br>
+        <label for="telefono">Teléfono:</label>
+        <input type="text" id="telefono" name="telefono"><br><br>
+        <label for="email">e-mail:</label>
+        <input type="text" id="email" name="email"><br><br>
+        <label for="descripcion">Descripción:</label>
+        <input type="text" id="descripcion" name="descripcion" style="width:400px;height:200px" ><br><br>
+        <label for="sabores">Sabores elegidos:</label>
+        <input type="text" id="sabores" name="sabores" style="width:400px;height:20px" ><br><br>
+        <label for="adornos">Adornos elegidos:</label>
+        <input type="text" id="adornos" name="adornos" style="width:400px;height:20px" ><br><br>
+        <input type="submit" value="Submit">
+        <input type="reset">
+    </form>
+    
+
+<!-- 
+    <h2> Sabores</h2><br>
+    <ol>
+        <li>Alumno1</li>
+        <li>Alumno2</li>
+        <li>Alumno3</li>
+    </ol>
+-->
+
+</body>
+
+</html>
