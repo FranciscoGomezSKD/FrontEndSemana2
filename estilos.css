@@ -155,8 +155,9 @@ footer{
 .foot_sec1{
     width: 80px;
     height: 80px;
-    background-image: url("./ONLY-CAKES.PNG");
+    /*background-image: url("./ONLY-CAKES.PNG");
     background-size: cover;
+    border-style: dotted;*/
 }
 
 .foot_sec2{
