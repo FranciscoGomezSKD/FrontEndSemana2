@@ -8,7 +8,7 @@ En este repositorio se encuentran los archivos HTML de las paginas correspondien
 * [Cliente]()
 * [Pedidos del cliente]()
 * [Pastelero]() (Inventario)
-* [Tabla de nuevos pedidos.]( "https://github.com/FranciscoGomezSKD/FrontEndSemana2/blob/main/pedidos_nuevos.html")
+* [Tabla de nuevos pedidos.]( "https://github.com/FranciscoGomezSKD/FrontEndSemana2/pedidos_nuevos.html")
 
 y como bonus, se le agregaron los siguientes [estilos]().
 
