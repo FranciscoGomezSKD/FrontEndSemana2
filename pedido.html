@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Only-Cakes: Pedido</title>
+    <link rel="stylesheet" href="./estilos.css">
+    <!--Estilos CSS-->
+
+</head>
+
+<body>
+    <!--Cabeza de página-->
+    <header>
+        <img src="./ONLY-CAKES2.PNG" class="logo" alt="Only-cakes">
+        <img src="./text.PNG" class="name" alt="Only-cakes">
+        <!--<h1 class="name">Pastelerías Only-Cakes: ¡Dulce Felicidad!</h1>-->
+    </header>
+
+    <div>
+        <!--Barra de navegación lateral-->
+        <div class="divnav">
+            <a class= "button" href="./index.html"  target="_self" >Inicio</a><br>
+            <a class= "button" href="./pedido.html"  target="_self" >Pedidos</a><br>
+            <a class= "button" href="./pastelero.html"  target="_self" >Pastelero</a><br>
+            <a class= "button" href="./pedidos_nuevos.html"  target="_self" >Tabla</a><br>   
+        </div>
+
+        <!--Panel central-->
+        <div class="centralsect">
+            <!--Mensaje de bienvenida-->
+            <div class="bar_msg">
+                <h1> Pedido </h1>
+            </div>
+
+            <!--Cuerpo del panel-->
+            <div class="center_pnl">
+                <article class="art_pan1">
+                    <p>Seleccione los sabores y adornos de su preferencia:</p><br>
+                    <p>Sabores</p>
+                    <input type="checkbox" id="topping1" name="topping1" value="Sabor1">
+                    <label for="topping1">4 Chocolates</label><br>
+                    <input type="checkbox" id="topping2" name="topping2" value="Sabor2">
+                    <label for="topping2">Cheesecake</label><br>
+                    <input type="checkbox" id="topping3" name="topping3" value="Sabor3">
+                    <label for="topping3">Carrotcake</label><br>
+                    <input type="checkbox" id="topping4" name="topping4" value="Sabor4">
+                    <label for="topping4">Frutos rojos</label><br>
+                    <input type="checkbox" id="topping5" name="topping5" value="Sabor5">
+                    <label for="topping5">Tiramisú</label><br>
+                    <input type="checkbox" id="topping6" name="topping6" value="Sabor6">
+                    <label for="topping6">Durazno</label><br>
+                    <br>
+                    <p>Decoración</p>
+                    <input type="checkbox" id="topping7" name="topping7" value="Adorno1">
+                    <label for="topping7">Mermelada</label><br>
+                    <input type="checkbox" id="topping8" name="topping8" value="Adorno2">
+                    <label for="topping8">Zarzamora</label><br>
+                    <input type="checkbox" id="topping9" name="topping9" value="Adorno3">
+                    <label for="topping9">Rizos de chocolate</label><br>
+                    <input type="checkbox" id="topping10" name="topping10" value="Adorno4">
+                    <label for="topping10">Nuez</label><br>
+                    <input type="checkbox" id="topping11" name="topping11" value="Adorno5">
+                    <label for="topping11">Coco</label><br>
+                    <input type="checkbox" id="topping12" name="topping12" value="Adorno6">
+                    <label for="topping12">Glasé de Frutas</label><br>
+
+                    <br>
+                    <br>
+
+                    <p>Datos del cliente</p>
+                    <form action="/accion.js" id="form1" method="post">
+                        <label for="nombre">Nombre:</label>
+                        <input type="text" id="nombre" name="nombre"><br><br>
+                        <label for="telefono">Teléfono:</label>
+                        <input type="text" id="telefono" name="telefono"><br><br>
+                        <label for="email">e-mail:</label>
+                        <input type="text" id="email" name="email"><br><br>
+                        <label for="descripcion">Descripción:</label>
+                        <input type="text" id="descripcion" name="descripcion" style="width:400px;height:200px" ><br><br>
+                        <label for="sabores">Sabores elegidos:</label>
+                        <input type="text" id="sabores" name="sabores" style="width:400px;height:20px" ><br><br>
+                        <label for="adornos">Adornos elegidos:</label>
+                        <input type="text" id="adornos" name="adornos" style="width:400px;height:20px" ><br><br>
+                        <input type="submit" value="Submit" onclick="alert('Se ha realizado su pedido. Muchas Gracias');">
+                        <input type="reset">
+                    </form>
+                    
+                    <br>
+                    <br>
+                    
+                </article>
+
+                <article class="art_pan2 ped_">
+                </article>
+            </div>
+
+        </div>
+    </div>
+
+    <!--Pie de página-->
+    <footer>
+        <table>
+            <tr>
+                <th   class="th_">
+                    <section class="foot_sec1">
+                    </section>
+                </th>
+                <th   class="th_">        
+                    <section class="foot_sec2">
+                        <p> Av. Siempreviva No.742 <br>
+                            Col. Las Flores, C.P.04123, Azcapotzalco, CDMX <br>
+                            Tel. 5523367712 <br>
+                            Horario de Atencíon: Lun - Vie, 09:00 - 20:00 hrs <br>
+                        </p>
+                    </section>
+                </th>
+            </tr>
+        </table>
+    </footer>
+
+
+</body>
+</html>

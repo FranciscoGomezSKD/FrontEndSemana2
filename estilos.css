@@ -1,0 +1,188 @@
+
+*{
+    margin: 0%;
+}
+
+body{
+    display:block;
+    background-image: url("./cupcake.png");
+    background-position: 0px -700px;
+    display: flex;
+}
+
+header{
+    padding: 20px 0px 20px 0px;
+    /*background-image: url("./cupcake.jpg"); */
+    background: rgba(255, 255, 255, 0.295); 
+    background-size: auto;
+    position: fixed;
+    width: 100%;
+    height: 120px;
+    margin: auto auto;
+}
+
+.divnav {
+    float: left;
+    width: 70px;
+    height: 53.8%;
+    background: rgba(29, 29, 29, 0.356);
+    padding: 150px 20px 0px 20px;
+    position:fixed;
+    top:160px;
+    
+}
+
+.button {
+    background-color: #ffffff; 
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px aqua;
+    color: rgb(0, 0, 0);
+    border: 2px solid   aqua;
+    padding: 10px 10px 18px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 15px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    margin-left: -10px;
+    width: 60px;
+    height: 4px;
+}
+
+.logo{
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    width:120px;
+    height:120px;
+    margin: auto auto;
+}
+
+.name{
+    position: fixed;
+    top: -5px;
+    left: 10%;
+    margin: auto auto;
+    text-shadow: 5px 5px 10px #ffffff;
+    color:rgb(88, 88, 88);
+    font: bold;
+}
+
+.centralsect{
+    /*border-style: dotted;*/
+    position: fixed;
+    top: 160px;
+    left: 110px;
+    margin: 0px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
+    width: 100%;
+    height: 100%;
+    scroll-behavior: auto;
+}
+
+.bar_msg{
+    margin: 0px 0px 0px 0px;
+    padding: 20px 0px 70px 0px;
+    font-size: x-large;
+    width: 100%;
+    height: 10px;
+    color: #ffffff;
+    align-content: center;
+    background: rgba(29, 29, 29, 0.356);
+    text-align: center;
+}
+
+.center_pnl{
+    background: rgba(255, 255, 255, 0.295);
+    margin: 3% 3% 3% 6%;
+    padding: 20px 20px 20px 20px;
+    width: 80%;
+    height: 400px;
+}
+
+.center_pnl h2{
+    text-align: center;
+}
+
+.art_pan1{
+    margin: 10px 10px 10px;
+    padding: 20px 50px 20px;
+    width:30%;
+    height: 340px;
+    background: rgb(255, 255, 255);
+    position: fixed;
+    overflow-y: scroll;
+}
+
+.ap_c{
+    width: 74%;
+}
+
+.art_pan2{
+    margin: 10px 10px 10px;
+    padding: 20px 20px 20px;
+    width:39%;
+    height: 340px;
+    background: rgb(255, 255, 255);
+    position: fixed;
+    top: 339px;
+    left: 950px;
+    background-image: url("./cake.jpg");
+    background-size: cover;
+    background-position: 0px -620px;
+}
+
+.ped_{
+    background-image: url("./blueberry.jpg");
+}
+
+.inv_{
+    background-image: url("./redcake.jpg");
+}
+
+footer{
+    padding: 20px 20px 20px 20px;
+    background: rgba(255, 255, 255, 0.295); 
+    background-size: auto;
+    top: 87%;
+    position: fixed;
+    width: 100%;
+    height: 12%;
+    margin: auto auto;
+}
+
+.foot_sec1{
+    width: 80px;
+    height: 80px;
+    background-image: url("./ONLY-CAKES.PNG");
+    background-size: cover;
+}
+
+.foot_sec2{
+    width: auto;
+    height: auto;
+    text-align: justify;
+    margin-left: 20px;
+}
+
+table {
+    table-layout: auto;
+}
+
+th { 
+    width: 200px;
+}
+
+td { 
+    width: 150px;
+}
+
+.th_ { 
+    width:  auto;
+}
+
+.th_nped { 
+    width:  auto;
+    text-align: left;
+}

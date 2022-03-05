@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pastelería Only-Cakes</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        /* Estilo de header */
+        header {
+            /*background-color: #000000;*/
+            padding: 10px;
+            text-align: center;
+            font-size: 35px;
+            color: rgba(255, 255, 255, 0.801);
+            background-image: url("./cupcake.jpg"); 
+            background-position: 0px -700px;
+            background-size: auto;
+            text-shadow: 0 0 9px rgb(19, 18, 18);
+            position: fixed;
+            width: 100%;
+        }
+
+        /* Crear 2 columnas con la misma posición en la fila */
+        nav {
+            float: left;
+            width: 10%;
+            height: 100%;
+            /* only for demonstration, should be removed */
+            background: #ccc;
+            padding: 20px;
+            /*position: fixed;*/
+            position: static;
+            
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        article {
+            float: left;
+            padding: 20px;
+            width: 90%;
+            background-color: #f1f1f1;
+            height: 100%;
+            background-image: url("./cake.jpg");
+            background-size: cover;
+            
+        }
+
+        /* Clear floats after the columns */
+        section::after {
+            content: "";
+            display: table;
+            clear: both;
+            position: sticky;
+        }
+
+        /* Responsive layout */
+        @media (max-width: 600px) {
+
+            nav,
+            article {
+                width: 100%;
+                height: auto;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    
+    <header>
+        <table>
+            <tr>
+                <th><img src="./ONLY-CAKES.PNG" alt="Only-cakes" width="300px" height="300px"></th>
+                <th><h1>Pastelerías Only-Cakes: ¡Dulce Felicidad!</h1></th>
+                <!--<th>México</th> -->
+            </tr>
+        </table>
+    </header>
+    
+    <section>
+
+        <nav>
+
+        </nav>
+
+        <article>
+            <section>
+                <h2 align="center"> Bienvenidos </h2>
+                <br>
+                <br>
+                <h2 align="center"> MENÚ </h2>
+                <br>
+                <br>
+
+                <dl>
+                    <dt>Sabores</dt>
+                    <dd>4 Chocolates ...................................... $30.00</dd>
+                    <dd>Cheesecake ........................................ $40.00</dd>
+                    <dd>Carrotcake ......................................... $50.00</dd>
+                    <dd>Frutos rojos ....................................... $60.00</dd>
+                    <dd>Tiramisú ............................................ $70.00</dd>
+                    <dd>Durazno ............................................. $80.00</dd>
+                    <br>
+                    <dt>Decoración</dt>
+                    <dd>Mermelada ......................................... $10.00</dd>
+                    <dd>Zarzamora .......................................... $20.00</dd>
+                    <dd>Rizos de chocolate ............................. $30.00</dd>
+                    <dd>Nuez ................................................... $40.00</dd>
+                    <dd>Coco ................................................... $50.00</dd>
+                    <dd>Glasé de Frutas ................................... $60.00</dd>
+                    <br>
+                </dl>
+                
+                <br>
+                <hr>
+                <br>
+
+                <h2 align="center"> PEDIDO </h2>
+                <br>
+                <p>Seleccione los sabores y adornos de su preferencia:</p>
+                <p>Sabores</p>
+                <input type="checkbox" id="topping1" name="topping1" value="Sabor1">
+                <label for="topping1">4 Chocolates</label><br>
+                <input type="checkbox" id="topping2" name="topping2" value="Sabor2">
+                <label for="topping2">Cheesecake</label><br>
+                <input type="checkbox" id="topping3" name="topping3" value="Sabor3">
+                <label for="topping3">Carrotcake</label><br>
+                <input type="checkbox" id="topping4" name="topping4" value="Sabor4">
+                <label for="topping4">Frutos rojos</label><br>
+                <input type="checkbox" id="topping5" name="topping5" value="Sabor5">
+                <label for="topping5">Tiramisú</label><br>
+                <input type="checkbox" id="topping6" name="topping6" value="Sabor6">
+                <label for="topping6">Durazno</label><br>
+                <br>
+                <p>Decoración</p>
+                <input type="checkbox" id="topping7" name="topping7" value="Adorno1">
+                <label for="topping7">Mermelada</label><br>
+                <input type="checkbox" id="topping8" name="topping8" value="Adorno2">
+                <label for="topping8">Zarzamora</label><br>
+                <input type="checkbox" id="topping9" name="topping9" value="Adorno3">
+                <label for="topping9">Rizos de chocolate</label><br>
+                <input type="checkbox" id="topping10" name="topping10" value="Adorno4">
+                <label for="topping10">Nuez</label><br>
+                <input type="checkbox" id="topping11" name="topping11" value="Adorno5">
+                <label for="topping11">Coco</label><br>
+                <input type="checkbox" id="topping12" name="topping12" value="Adorno6">
+                <label for="topping12">Glasé de Frutas</label><br>
+
+                <br>
+                <br>
+
+                <p>Datos del cliente</p>
+                <form action="/accion.js" id="form1" method="post">
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre"><br><br>
+                    <label for="telefono">Teléfono:</label>
+                    <input type="text" id="telefono" name="telefono"><br><br>
+                    <label for="email">e-mail:</label>
+                    <input type="text" id="email" name="email"><br><br>
+                    <label for="descripcion">Descripción:</label>
+                    <input type="text" id="descripcion" name="descripcion" style="width:400px;height:200px" ><br><br>
+                    <label for="sabores">Sabores elegidos:</label>
+                    <input type="text" id="sabores" name="sabores" style="width:400px;height:20px" ><br><br>
+                    <label for="adornos">Adornos elegidos:</label>
+                    <input type="text" id="adornos" name="adornos" style="width:400px;height:20px" ><br><br>
+                    <input type="submit" value="Submit" onclick="alert('Se ha realizado su pedido. Muchas Gracias');">
+                    <input type="reset">
+                </form>
+                
+                <br>
+                <br>
+                <hr>
+                <br>
+                <br>
+            </section>
+        </article>
+
+    </section>
+    <a href="./pastelero.html"  target="_self" >Pastelero</a><br>
+    <a href="./contacto.html"  target="_self" >Contacto</a><br>
+
+
+</body>
+
+</html>
